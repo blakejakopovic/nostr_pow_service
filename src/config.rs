@@ -1,7 +1,6 @@
 use clap::Parser;
 use std::net::SocketAddr;
 
-
 #[derive(Parser, Debug)]
 #[command(author, version, about, long_about = None)]
 pub struct AppArgs {

@@ -33,18 +33,18 @@ This NIP defines a new message, `POW`, which clients can send when they seek to 
 When requested by clients, the message is of the following form:
 
 ```
-["POW", <pre-signed-event-json>, <target-min-proof-of-work>]
+["POW", <pre-hashed-event-json>, <target-min-proof-of-work>]
 ```
 
 And, in response from the `PoW-SP`, of the following form:
 
 ```
-["POW", <signed-event-json>]
+["POW", <unsigned-event-json>]
 ```
 
-The `pre-signed-event-json` can take two forms. Example A is minimal and only includes the required fields for an event id to be calcuated. Example B is a normal fully signed event with an `id` and `signature`, however most likely with a low proof of work. Example B makes it easier for Nostr apps and libraries to re-use existing code.
+The `pre-hashed-event-json` can take two forms. Example A is minimal and only includes the required fields for an event id to be calcuated. Example B is a normal fully signed event with an `id` and `signature`, however most likely with a low proof of work. Example B makes it easier for Nostr apps and libraries to re-use existing code.
 
-Example A: A minimal pre-signed event
+Example A: A minimal pre-hashed event
 
 ```json
 {
@@ -54,7 +54,7 @@ Example A: A minimal pre-signed event
 }
 ```
 
-Example B: A normal signed event
+Example B: A normal hashed and signed event
 
 ```json
 {

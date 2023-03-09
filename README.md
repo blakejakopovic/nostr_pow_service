@@ -46,6 +46,13 @@ Start service
 2. Connect via websocket
 3. Reply to the AUTH request
 4. Send POW request with event
+```
+// Client Request
+["POW", <pre-hashed-event-json>, <target-min-proof-of-work>]
+
+// Server Reponse
+["POW", <unsigned-event-json>]
+```
 
 ## Development and Testing
 
