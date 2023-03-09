@@ -14,10 +14,10 @@ pub struct AppArgs {
    #[arg(long, env="PUBKEY_WHITELIST", default_value="", value_delimiter=',')]
    pub pubkey_whitelist: Vec<String>,
 
-   #[arg(long, env="MIN_POW_DIFFICILTY", default_value="10")]
+   #[arg(long, env="MIN_POW_DIFFICULTY", default_value="10")]
    pub min_pow_difficulty: u16,
 
-   #[arg(long, env="MAX_POW_DIFFICILTY", default_value="25")]
+   #[arg(long, env="MAX_POW_DIFFICULTY", default_value="25")]
    pub max_pow_difficulty: u16,
 }
 

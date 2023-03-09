@@ -24,8 +24,8 @@ Configure `.env` file (or use command line arguments)
 LISTEN - binding host and port for service
 RELAY_IDENTIFIER - relay identifier used for AUTH
 PUBKEY_WHITELIST - comma separated hex pubkeys
-MIN_POW_DIFFICILTY - minimum proof of work difficulty offered
-MAX_POW_DIFFICILTY - maximum proof of work difficulty offered
+MIN_POW_DIFFICULTY - minimum proof of work difficulty offered
+MAX_POW_DIFFICULTY - maximum proof of work difficulty offered
 
 or
 
