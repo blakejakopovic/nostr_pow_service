@@ -4,7 +4,7 @@
 
 To help add a base cost to Nostr spam events, relays can set a minimum proof of work required for an event (fixed or dynamic per pubkey, content, kind, etc) to be accepted. Mobiles and other devices can off-load this computation onto a `PoW Service Provider`, which leverages servers to remotely generate a target (or better) proof of work event id, before an event is signed.
 
-This project provides an example for [NIP-XX - Proof of Work Service Provider](https://gist.github.com/blakejakopovic/6c0ea718c0f956c461e9e8952d8c6533), which defines how a `PoW Service Provider` can offer this service using existing relay websockets using `supported_nips`, or connecting to a dedicated `PoW Service Provider`.
+This project provides an example for [NIP-XX - Proof of Work Service Provider](https://github.com/blakejakopovic/nostr_pow_service/blob/master/NIP-XX.md), which defines how a `PoW Service Provider` can offer this service using existing relay websockets using `supported_nips`, or connecting to a dedicated `PoW Service Provider`.
 
 ## Considerations
 * Currently it's setup to accept requests from a pubkey whitelist only
