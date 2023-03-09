@@ -40,6 +40,13 @@ Start service
 ```
 
 
+## Usage
+
+1. Start server
+2. Connect via websocket
+3. Reply to the AUTH request
+4. Send POW request with event
+
 ## Development and Testing
 
 
